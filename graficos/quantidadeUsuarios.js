@@ -1,4 +1,4 @@
-async function quantidadeUsuarios() {
+async function fnQuantidadeUsuarios() {
     const url = 'https://raw.githubusercontent.com/guilhermeomrails/api/main/numero_usuarios.json'
     const res = await fetch(url)
     const dados = await res.json()
@@ -6,7 +6,7 @@ async function quantidadeUsuarios() {
     console.log(dados)
 }
 
-quantidadeUsuarios()
+fnQuantidadeUsuarios()
 
 const nomeDasRedes = Object.keys(dados)
 const quantidadeUsuarios = Object.values(dados)
